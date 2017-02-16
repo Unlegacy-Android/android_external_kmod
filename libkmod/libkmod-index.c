@@ -692,7 +692,7 @@ static struct index_mm_node *index_mm_read_node(struct index_mm *idx,
 		for (i = 0; i < child_count; i++)
 			children[i] = read_long_mm(&p);
 	} else {
-		first = INDEX_CHILDMAX;
+		first = (char)INDEX_CHILDMAX;
 		last = 0;
 		child_count = 0;
 	}
